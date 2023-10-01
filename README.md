@@ -12,14 +12,7 @@ This repository is a personal project of a chess bot that is meant to play chess
   
 <img src="./README/Og_to_Lines2.png">
 
-  For all single-channel arrays of the image, <code>cv2.findContours()</code> is used to find all possible vertices of various squares within the image. Then, they are filtered through to ensure only the vertices of the 64 squares that make up the chess board are used.
-<pre>all_squares = []
-w_mode = max(set(sqr_w_lst), key=sqr_w_lst.count)
-    for square_item in unfiltered_squares_list:
-        pps_of_sqr = mode_pps(square_item)
-        if pps_of_sqr > w_mode - 3 and pps_of_sqr < w_mode + 3:
-            all_squares.append(square_item)</pre>
-These vertices are then used to determine the coordinates of the chessboard within the image.<br>
+  For all single-channel arrays of the image, <code>cv2.findContours()</code> is used to find all possible vertices of various squares within the image. Then, they are filtered through to ensure only the vertices of the 64 squares that make up the chess board are used. These vertices are then used to determine the coordinates of the chessboard within the image. <br>
 
 
 <img src="./README/Lines_to_Board.png">
