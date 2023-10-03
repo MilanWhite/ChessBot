@@ -19,4 +19,5 @@ This repository is a personal project of a chess bot that is meant to play chess
 
 
 <h4>2) Piece Recognition</h4>
+Currently implementing piece recognition through Tensorflow and Ai Image Recognition...
 <h4>3) Next Chess Move</h4>
